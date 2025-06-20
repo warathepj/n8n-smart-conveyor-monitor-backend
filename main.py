@@ -12,16 +12,16 @@ async def handler(websocket, path=None):
                 print(f"Received: {data}")
                 if data.get("currentRate") == 0:
                     print("stop")
-                    await client.post("http://localhost:5678/webhook/1c9a12a3-2af2-4a5b-9981-05880e995cbb", json={"status": "stop", "rate": data.get("currentRate")})
-                    await asyncio.sleep(20) # Delay for 10 seconds
+                    await client.post("http://localhost:5678/webhook/1c9a12a3-2af2-4a5b-9981-05880e995cbb", json={"status": "stop", "rate": data.get("currentRate"), "totalProduced": data.get("totalProduced")})
+                    await asyncio.sleep(20) # Delay for 20 seconds
                 elif 10 <= data.get("currentRate") <= 50:
                     print("too slow")
-                    await client.post("http://localhost:5678/webhook/1c9a12a3-2af2-4a5b-9981-05880e995cbb", json={"status": "too slow", "rate": data.get("currentRate")})
-                    await asyncio.sleep(20) # Delay for 10 seconds
+                    await client.post("http://localhost:5678/webhook/1c9a12a3-2af2-4a5b-9981-05880e995cbb", json={"status": "too slow", "rate": data.get("currentRate"), "totalProduced": data.get("totalProduced")})
+                    await asyncio.sleep(20) # Delay for 20 seconds
                 elif data.get("currentRate") > 60:
                     print("too fast")
-                    await client.post("http://localhost:5678/webhook/1c9a12a3-2af2-4a5b-9981-05880e995cbb", json={"status": "too fast", "rate": data.get("currentRate")})
-                    await asyncio.sleep(20) # Delay for 10 seconds
+                    await client.post("http://localhost:5678/webhook/1c9a12a3-2af2-4a5b-9981-05880e995cbb", json={"status": "too fast", "rate": data.get("currentRate"), "totalProduced": data.get("totalProduced")})
+                    await asyncio.sleep(20) # Delay for 20 seconds
                 # Process the received data as needed
                 # For example, you could store it in a database,
                 # or trigger other actions based on the data.
