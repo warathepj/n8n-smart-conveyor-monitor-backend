@@ -6,6 +6,53 @@ This project provides a comprehensive solution for monitoring a conveyor system,
 
 ---
 
+## Smart CV Chart Telegram Bot
+
+This n8n workflow creates a Telegram bot that generates a chart based on user input. When a user sends the `/chart` command to the bot, it triggers an HTTP request to a local server, which is expected to process the request and potentially generate a chart. The bot then responds with a clickable link to an example chart image.
+
+### Workflow Description
+
+The workflow consists of the following nodes:
+
+1.  **Telegram Trigger:** This node listens for incoming messages to your Telegram bot. It's configured to trigger the workflow when a message is received.
+
+2.  **If:** This node acts as a conditional gate. It checks if the received Telegram message's text content is exactly `/chart`.
+
+      * If the message is `/chart`, the workflow proceeds to the **HTTP Request** node.
+      * If the message is anything else, the workflow stops.
+
+3.  **HTTP Request:** This node sends a POST request to `http://localhost:8000/data`. It includes the original message text from Telegram in the request body under the key `text`. This is where your backend service (running locally at `http://localhost:8000`) would receive the command and generate the chart data or image.
+
+4.  **Telegram:** This node sends a message back to the user in the Telegram chat. It's configured to send a predefined message containing a hardcoded link to an example chart image (`your-chart-link/chart.png`). The `parse_mode` is set to `HTML` to make the link clickable.
+
+### How to Use
+
+#### 1\. Setup Telegram Bot
+
+  * Create a new bot with BotFather on Telegram and obtain your **Bot Token**.
+  * In the **Telegram Trigger** and **Telegram** nodes, create new Telegram API credentials and paste your Bot Token there.
+
+#### 2\. Local Server Setup (for Chart Generation)
+
+This workflow expects a local server running at `http://localhost:8000` that can handle the `/data` endpoint and process the incoming `text` parameter. This server should ideally generate a chart based on the input and make it accessible via a URL.
+
+**Note:** The provided Telegram response currently uses a static example link. You would need to modify the **Telegram** node to use a dynamically generated chart URL from your local server once the chart is created.
+
+#### 3\. Activate the Workflow
+
+Once you have configured the Telegram API credentials and set up your local server, activate the n8n workflow.
+
+#### 4\. Test the Bot
+
+Open your Telegram app and send the command `/chart` to your bot. You should receive a response with the example chart link.
+
+### Further Enhancements
+
+  * **Dynamic Chart URLs:** Instead of a hardcoded link, modify the "HTTP Request" node to expect a chart URL in the response from your local server, and then use that URL in the "Telegram" node.
+  * **Error Handling:** Add error handling to gracefully manage situations where the HTTP request fails or the chart generation encounters issues.
+  * **More Commands:** Extend the "If" node or add more "If" branches to handle additional commands and chart types.
+  * **User Input for Charts:** Allow users to specify parameters for chart generation (e.g., `/chart sales last_month`) by parsing the message text in your local server.
+
 ## System Architecture
 
 The Smart Conveyor Monitor system consists of three main components:
@@ -17,16 +64,11 @@ https://github.com/warathepj/n8n-smart-conveyor-monitor-backend.git
 2.  **React Frontend (`flow-flicker-visualizer/`)**: A web application that connects to the Python backend's WebSocket to receive and visualize the conveyor's operational data. It provides a user-friendly interface to monitor the conveyor's status.
 ```bash
 https://github.com/warathepj/flow-flicker-visualizer.git
-```
-3.  **n8n Workflow**: Receives status updates from the Python backend via webhooks and sends automated alerts to a Telegram chat based on the conveyor's performance (e.g., "too slow", "too fast", "stopped").
 
-```mermaid
-graph TD
-    A[Conveyor System Data Source] -->|Sends Data| B(Python WebSocket Backend);
-    B -->|WebSocket Data| C(React Frontend - flow-flicker-visualizer);
-    B -->|Webhook POST Request| D(n8n Workflow);
-    D -->|Telegram Alerts| E[Monitoring Team / User];
+https://github.com/warathepj/n8n-flow-flicker-visualizer.git
 ```
+
+3.  **n8n Workflow**: Receives status updates from the Python backend via webhooks and sends automated alerts to a Telegram chat based on the conveyor's performance (e.g., "too slow", "too fast", "stopped").
 
 ---
 
@@ -59,6 +101,20 @@ This Python script sets up a WebSocket server to receive real-time data from the
     python main.py
     ```
     The server will start on `ws://localhost:8765`.
+
+### Additional Functionality
+
+*   **MongoDB Integration**: The backend now saves incoming data to a MongoDB database for historical analysis and storage.
+*   **Chart Creation**: The backend triggers the creation of a chart image (`chart.png`) upon receiving new data.
+
+---
+
+## HTTP Server (`backend/server.py`)
+This server handles HTTP requests, specifically for generating charts.
+
+### Functionality
+
+*   **Chart Generation**: When the server receives a POST request to `/data` with the content `{'text': '/chart'}`, it executes the `chart.py` script to generate a chart image. The chart image is saved in the `backend/chart` directory.
 
 ---
 
