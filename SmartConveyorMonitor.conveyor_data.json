@@ -1,0 +1,924 @@
+[{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:44.117Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bf87da9d6241ff67994"
+  },
+  "totalProduced": 0,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:45.140Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bf97da9d6241ff67995"
+  },
+  "totalProduced": 1,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:45.522Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bf97da9d6241ff67996"
+  },
+  "totalProduced": 1,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:46.130Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bfa7da9d6241ff67997"
+  },
+  "totalProduced": 2,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:47.646Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bfb7da9d6241ff67998"
+  },
+  "totalProduced": 3,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:48.670Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bfc7da9d6241ff67999"
+  },
+  "totalProduced": 4,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:49.655Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bfd7da9d6241ff6799a"
+  },
+  "totalProduced": 5,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:50.525Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bfe7da9d6241ff6799b"
+  },
+  "totalProduced": 5,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:50.670Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bfe7da9d6241ff6799c"
+  },
+  "totalProduced": 6,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:51.659Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560bff7da9d6241ff6799d"
+  },
+  "totalProduced": 7,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:53.662Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c017da9d6241ff6799e"
+  },
+  "totalProduced": 8,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:54.670Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c027da9d6241ff6799f"
+  },
+  "totalProduced": 9,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:55.528Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c037da9d6241ff679a0"
+  },
+  "totalProduced": 9,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:55.674Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c037da9d6241ff679a1"
+  },
+  "totalProduced": 10,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:56.687Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c047da9d6241ff679a2"
+  },
+  "totalProduced": 11,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:57.687Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c057da9d6241ff679a3"
+  },
+  "totalProduced": 12,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:33:59.693Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c077da9d6241ff679a4"
+  },
+  "totalProduced": 13,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:00.532Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c087da9d6241ff679a5"
+  },
+  "totalProduced": 13,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:00.698Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c087da9d6241ff679a6"
+  },
+  "totalProduced": 14,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:01.707Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c097da9d6241ff679a7"
+  },
+  "totalProduced": 15,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:02.709Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c0a7da9d6241ff679a8"
+  },
+  "totalProduced": 16,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:03.732Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c0b7da9d6241ff679a9"
+  },
+  "totalProduced": 17,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:04.726Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58684
+  },
+  "_id": {
+    "$oid": "68560c0c7da9d6241ff679aa"
+  },
+  "totalProduced": 18,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:58.654Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58906
+  },
+  "_id": {
+    "$oid": "68560c42c3426ce5210a3f10"
+  },
+  "totalProduced": 30,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:58.655Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58906
+  },
+  "_id": {
+    "$oid": "68560c42c3426ce5210a3f11"
+  },
+  "totalProduced": 31,
+  "currentRate": 60
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:34:58.656Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 58906
+  },
+  "_id": {
+    "$oid": "68560c42c3426ce5210a3f12"
+  },
+  "totalProduced": 31,
+  "currentRate": 46
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T01:36:07.083Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 42058
+  },
+  "totalProduced": 54,
+  "_id": {
+    "$oid": "68560c877f8f45a03f9a79b2"
+  },
+  "currentRate": 40
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:23.455Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615bbce162448ef9a158c"
+  },
+  "totalProduced": 73
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:24.173Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615bcce162448ef9a158e"
+  },
+  "totalProduced": 73
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:24.478Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615bcce162448ef9a158f"
+  },
+  "totalProduced": 74
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:25.880Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615bdce162448ef9a1591"
+  },
+  "totalProduced": 75
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:27.887Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615bfce162448ef9a1593"
+  },
+  "totalProduced": 76
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:28.893Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c0ce162448ef9a1595"
+  },
+  "totalProduced": 77
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:29.175Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c1ce162448ef9a1597"
+  },
+  "totalProduced": 77
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:29.895Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c1ce162448ef9a1598"
+  },
+  "totalProduced": 78
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:31.900Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c3ce162448ef9a159a"
+  },
+  "totalProduced": 79
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:32.908Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c4ce162448ef9a159c"
+  },
+  "totalProduced": 80
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:34.180Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c6ce162448ef9a159e"
+  },
+  "totalProduced": 80
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:34.922Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c6ce162448ef9a159f"
+  },
+  "totalProduced": 81
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:35.916Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c7ce162448ef9a15a1"
+  },
+  "totalProduced": 82
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:36.920Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c8ce162448ef9a15a3"
+  },
+  "totalProduced": 83
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:37.927Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615c9ce162448ef9a15a5"
+  },
+  "totalProduced": 84
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:38.937Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615cace162448ef9a15a7"
+  },
+  "totalProduced": 85
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:39.182Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615cbce162448ef9a15a9"
+  },
+  "totalProduced": 85
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:39.951Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615cbce162448ef9a15aa"
+  },
+  "totalProduced": 86
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:40.955Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615ccce162448ef9a15ac"
+  },
+  "totalProduced": 87
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:41.966Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615cdce162448ef9a15ae"
+  },
+  "totalProduced": 88
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:42.972Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615cece162448ef9a15b0"
+  },
+  "totalProduced": 89
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:43.979Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615cfce162448ef9a15b2"
+  },
+  "totalProduced": 90
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:44.186Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d0ce162448ef9a15b4"
+  },
+  "totalProduced": 90
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:44.982Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d0ce162448ef9a15b5"
+  },
+  "totalProduced": 91
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:45.990Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d1ce162448ef9a15b7"
+  },
+  "totalProduced": 92
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:46.997Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d2ce162448ef9a15b9"
+  },
+  "totalProduced": 93
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:48.005Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d4ce162448ef9a15bb"
+  },
+  "totalProduced": 94
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:49.029Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d5ce162448ef9a15bd"
+  },
+  "totalProduced": 95
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:49.188Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d5ce162448ef9a15bf"
+  },
+  "totalProduced": 95
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:50.008Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d6ce162448ef9a15c0"
+  },
+  "totalProduced": 96
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:51.012Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d7ce162448ef9a15c2"
+  },
+  "totalProduced": 97
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:52.021Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d8ce162448ef9a15c4"
+  },
+  "totalProduced": 98
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:53.021Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615d9ce162448ef9a15c6"
+  },
+  "totalProduced": 99
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:54.031Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615dace162448ef9a15c8"
+  },
+  "totalProduced": 100
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:54.189Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615dace162448ef9a15ca"
+  },
+  "totalProduced": 100
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:55.034Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 60,
+  "_id": {
+    "$oid": "685615dbce162448ef9a15cb"
+  },
+  "totalProduced": 101
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:15:55.458Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 47966
+  },
+  "currentRate": 46,
+  "_id": {
+    "$oid": "685615dbce162448ef9a15cd"
+  },
+  "totalProduced": 101
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:17:36.558Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 48394
+  },
+  "totalProduced": 122,
+  "_id": {
+    "$oid": "68561640df82ed1a8fe09a0e"
+  },
+  "currentRate": 0
+},
+{
+  "timestamp": {
+    "$date": "2025-06-21T02:21:00.938Z"
+  },
+  "metadata": {
+    "client_address": "127.0.0.1",
+    "client_port": 53984
+  },
+  "_id": {
+    "$oid": "6856170c7a2868ada75302f3"
+  },
+  "totalProduced": 181,
+  "currentRate": 0
+}]
