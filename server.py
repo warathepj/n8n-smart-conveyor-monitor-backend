@@ -25,6 +25,12 @@ class Handler(http.server.SimpleHTTPRequestHandler):
                 response = {'message': 'Data received successfully'}
                 self.wfile.write(json.dumps(response).encode('utf-8'))
 
+                # Check if the received message is {'text': '/chart'}
+                if data.get('text') == '/chart':
+                    print("Received '/chart' command. Creating chart...")
+                    os.system('python3 chart.py')  # Execute chart.py
+                    print("Chart creation initiated.")
+
             except json.JSONDecodeError:
                 self.send_response(400)
                 self.send_header('Content-type', 'application/json')
