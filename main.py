@@ -4,10 +4,31 @@ import json
 from httpx import AsyncClient # Using httpx for async http requests
 from db import MongoDBManager
 from datetime import datetime
+from chart import create_chart
 
 db_manager = MongoDBManager()
 
+latest_data = None  # Global variable to store the latest data
+
+async def save_data_periodically():
+    while True:
+        await asyncio.sleep(5)
+        if latest_data:
+            document = {
+                "timestamp": datetime.utcnow(),
+                "metadata": {
+                    "client_address": latest_data["client_address"],
+                    "client_port": latest_data["client_port"]
+                },
+                "currentRate": latest_data.get("currentRate"),
+                "totalProduced": latest_data.get("totalProduced")
+            }
+            db_manager.get_collection().insert_one(document)
+            print("Data saved to MongoDB (periodic).")
+
+
 async def handler(websocket, path=None):
+    global latest_data
     print(f"Client connected from {websocket.remote_address}")
     async with AsyncClient() as client:
         try:
@@ -16,6 +37,12 @@ async def handler(websocket, path=None):
                 print(f"Received: {data}")
 
                 # Prepare data for MongoDB insertion
+                latest_data = {
+                    "client_address": websocket.remote_address[0],
+                    "client_port": websocket.remote_address[1],
+                    "currentRate": data.get("currentRate"),
+                    "totalProduced": data.get("totalProduced")
+                }
                 document = {
                     "timestamp": datetime.utcnow(),
                     "metadata": {
@@ -27,6 +54,7 @@ async def handler(websocket, path=None):
                 }
                 db_manager.get_collection().insert_one(document)
                 print("Data saved to MongoDB.")
+                create_chart()
 
                 if data.get("currentRate") == 0:
                     print("stop")
@@ -54,6 +82,7 @@ async def main():
     # Start the WebSocket server on localhost, port 8765
     async with websockets.serve(handler, "localhost", 8765):
         print("WebSocket server started on ws://localhost:8765")
+        asyncio.create_task(save_data_periodically())  # Start the periodic saving task
         await asyncio.Future()  # Run forever
 
 if __name__ == "__main__":
